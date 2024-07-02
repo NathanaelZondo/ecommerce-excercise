@@ -1,0 +1,26 @@
+<div class="app">
+  <app-topbar></app-topbar>
+  <app-sub-header></app-sub-header>
+  <app-carousel></app-carousel>
+  <app-cartbutton></app-cartbutton>
+  <app-infosection></app-infosection>
+  <app-sortingfilter></app-sortingfilter>
+
+  <div class="flex-container">
+    <div>
+      <section class="filter-container">
+        <div><app-categoryfilter></app-categoryfilter></div>
+        <div><app-pricerangefilter></app-pricerangefilter></div>
+      </section>
+    </div>
+    <div><app-displayproducts></app-displayproducts></div>
+  </div>
+  <div><app-pagination></app-pagination></div>
+</div>
+
+<app-filterpopup
+  style="position: absolute; top: 0"
+  *ngIf="false"
+></app-filterpopup>
+
+<router-outlet></router-outlet>

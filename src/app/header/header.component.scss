@@ -1,0 +1,23 @@
+.sub-header {
+  margin-top: 30px;
+  background-color: red;
+}
+
+.cart-button {
+  float: right;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.header-text {
+  float: left;
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 32px;
+}
+
+@media (max-width: 800px) {
+  .cart-button {
+    display: none;
+  }
+}

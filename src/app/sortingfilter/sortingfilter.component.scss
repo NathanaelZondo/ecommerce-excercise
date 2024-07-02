@@ -1,0 +1,92 @@
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+.flex-container > div:first-child {
+  color: black;
+}
+
+.flex-container > div:nth-child(2) {
+  color: black;
+  flex-grow: 5;
+  font-size: 22px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bread-crumb {
+  font-size: 30px;
+  font-family: "Archivo";
+  font-weight: 700;
+  line-height: 32px;
+  display: flex;
+  flex-direction: row;
+}
+
+.bread-crumb-desc {
+  font-size: 30px;
+  font-family: "Archivo";
+  font-weight: 400;
+  line-height: 32px;
+  color: #9b9b9b;
+}
+
+.price-text {
+  font-family: "Archivo";
+  font-weight: 400;
+  color: black;
+  margin-right: 5px;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.sort-text {
+  font-family: "Archivo";
+  font-weight: 400;
+  color: #9b9b9b;
+  font-size: 22px;
+  line-height: 24px;
+}
+.filter-button {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .bread-crumb {
+    font-size: 18px;
+    font-family: "Archivo";
+    font-weight: 700;
+    width: 100%;
+  }
+  .filter-button {
+    display: block;
+  }
+
+  .bread-crumb-desc {
+    font-size: 18px;
+    font-family: "Archivo";
+    font-weight: 400;
+    color: #9b9b9b;
+    margin-right: 80px;
+  }
+
+  .price-text {
+    font-family: "Archivo";
+    font-weight: 400;
+    color: black;
+    margin-right: 5px;
+    font-size: 18px;
+    line-height: 19px;
+    display: none;
+  }
+
+  .sort-text {
+    font-family: "Archivo";
+    font-weight: 400;
+    color: #9b9b9b;
+    display: none;
+  }
+}

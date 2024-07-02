@@ -1,0 +1,48 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  color: #656565;
+  font-size: 18px;
+  font-family: "Archivo";
+  margin-top: 30px;
+  margin-bottom: 95px;
+}
+.heading {
+  color: black;
+  font-family: "Archivo";
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.category {
+  margin-top: 20px;
+  font-family: "Archivo";
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.description {
+  margin-top: 15px;
+  font-family: "Archivo";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+
+  .description {
+    display: block;
+  }
+  .category {
+    display: none;
+  }
+}

@@ -1,0 +1,11 @@
+<div class="topbar-header">
+  <div class="header-text">
+    <h4>YourShop_</h4>
+  </div>
+
+  <div class="cart-button" (click)="openpopup()">
+    <ion-icon name="cart-outline"></ion-icon>
+  </div>
+</div>
+
+<app-cart *ngIf="open"> </app-cart>

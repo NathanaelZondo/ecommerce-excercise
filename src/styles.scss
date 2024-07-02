@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Arcgivo";
+}
+.mat-paginator {
+  background-color: white; /* Set background color to white */
+  color: black; /* Set text color to black */
+}
+
+/* Optionally, style the buttons inside the paginator */
+.mat-paginator .mat-paginator-navigation {
+  color: black; /* Set navigation buttons color to black */
+}

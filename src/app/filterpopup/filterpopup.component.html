@@ -1,0 +1,34 @@
+<section class="filter-container">
+  <section style="display: flex; flex-direction: row">
+    <h1 style="padding-right: 230px">Filter</h1>
+    <ion-button fill="clear" color="dark"
+      ><ion-icon slot="icon-only" name="close"></ion-icon
+    ></ion-button>
+  </section>
+  <div
+    style="
+      height: 100px;
+      background-color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+      padding-top: 15px;
+      z-index: 100;
+    "
+  >
+    <ion-button
+      size="default"
+      color="dark"
+      fill="outline"
+      style="width: 150px; margin-right: 20px"
+      >Default</ion-button
+    >
+    <ion-button size="default" color="dark" style="width: 150px"
+      >Large</ion-button
+    >
+  </div>
+  <div><app-categoryfilter></app-categoryfilter></div>
+  <div><app-pricerangefilter></app-pricerangefilter></div>
+</section>
+<ion-backdrop [visible]="true"></ion-backdrop>

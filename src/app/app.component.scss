@@ -1,0 +1,77 @@
+:host {
+  max-height: 100vh; /* Maximum height of viewport */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.app {
+  margin-left: 101px;
+  margin-right: 101px;
+  margin-top: 5px;
+  font-family: "Archivo";
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.flex-container {
+  display: flex;
+  align-items: stretch;
+}
+
+.flex-container > div:first-child {
+  width: 30%;
+}
+
+.flex-container > div:nth-child(2) {
+  width: 70%;
+}
+
+.filter-container {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.filter-container > div {
+  text-align: center;
+}
+
+.filter-container > div:first-child {
+  width: 268px;
+}
+
+.filter-container > div:nth-child(2) {
+  width: 100%;
+  margin-right: 49px;
+}
+
+app-cartbutton {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .app {
+    overflow-y: hidden;
+    max-height: 100vh; /* Maximum height of viewport */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .filter-container {
+    display: none;
+  }
+  app-cartbutton {
+    display: flex;
+  }
+
+  .filter-container {
+    display: none;
+  }
+
+  .flex-container > div:first-child {
+    width: 0%;
+  }
+  .flex-container > div:nth-child(2) {
+    width: 100%;
+  }
+}

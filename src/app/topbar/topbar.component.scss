@@ -1,0 +1,23 @@
+:host {
+  font-family: "Roboto Mono";
+  font-style: italic;
+  font-weight: 400;
+  color: black;
+}
+.topbar-header {
+  border-bottom: 2px solid rgb(230, 230, 230);
+  width: 100%;
+  height: 60px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.cart-button {
+  float: right;
+  margin-top: 15px;
+  font-size: 30px;
+}
+
+.header-text {
+  float: left;
+}
